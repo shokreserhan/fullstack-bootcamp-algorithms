@@ -14,7 +14,7 @@ const merge = function(arr, first, last, middle) {
     for (let i = 0; i < middle - first + 1; i++) {
         firstArray[i] = arr[i + first]
     }
-    for (let i = middle; i < last - middle; i++) {
+    for (let i = 0; i < last - middle; i++) {
         secondArray[i] = arr[i + middle + 1]
     }
 
@@ -40,7 +40,7 @@ const merge = function(arr, first, last, middle) {
 
 }
 
-let checkArr = [12, 11, 13, 5, 6, 7]
+let checkArr = [12, 11, -13, 5, 6, 7]
 
 mergeSort(checkArr, 0, checkArr.length - 1)
 
